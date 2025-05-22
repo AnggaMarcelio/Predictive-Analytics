@@ -9,6 +9,8 @@ Machine Learning dapat membantu mengatasi masalah ini dengan memberikan rekomend
 
 **Mengapa dan bagaimana masalah ini harus diselesaikan?**
 
+Masalah pemilihan tanaman yang tepat perlu diselesaikan karena ketidaktepatan dalam rekomendasi dapat berdampak signifikan pada produktivitas pertanian dan keberlanjutan usaha tani. Solusi berbasis machine learning memungkinkan otomatisasi dan akurasi dalam memberikan rekomendasi, sehingga memudahkan petani terutama yang belum memiliki keahlian agronomi mendalam.
+
 **Referensi**
 
 Dataset: https://www.kaggle.com/datasets/atharvaingle/crop-recommendation-dataset
@@ -16,7 +18,13 @@ Dataset: https://www.kaggle.com/datasets/atharvaingle/crop-recommendation-datase
 ## Business Understanding
 ### Problem Statements
 
+1. Bagaimana memprediksi tanaman yang paling sesuai berdasarkan parameter tanah dan iklim?
+2. Model machine learning mana yang paling akurat untuk rekomendasi tanaman?
+
 ### Goals
+
+1. Membangun model machine learning yang dapat merekomendasikan tanaman berdasarkan parameter lingkungan.
+2. Meningkatkan efisiensi pertanian dengan memberikan rekomendasi yang tepat.
 
 ### Solution statements
 
