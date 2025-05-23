@@ -132,6 +132,7 @@ Berikut hasil akurasi 3 buah model yang latih:
 | KNN | 0.975 |
 
 Gambar 3. Visualisasi Akurasi Model
+![Visualisasi Akurasi Model](https://github.com/AnggaMarcelio/Predictive-Analytics/blob/dda55e8197940fa9b5930ff0b67372336d284752/image/Screenshot%202025-05-23%20221339.png)
 
 
 **Referensi**
