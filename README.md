@@ -122,6 +122,30 @@ KNN adalah algoritma non-parametrik yang mengklasifikasikan sampel berdasarkan m
 
 ## Evaluation
 
+### Metrik Evaluasi yang Digunakan
+
+Dalam proyek klasifikasi ini, metrik evaluasi yang digunakan untuk mengukur kinerja model adalah:
+1. Accuracy (Akurasi)
+
+Metrik ini mengukur proporsi prediksi yang benar terhadap keseluruhan jumlah prediksi. Formula:
+$$\text{Accuracy} = \frac{\text{TP + TN}}{\text{TN + TP + FN + FP}} \times 100\%$$
+Precision, Recall, dan F1-Score (melalui Classification Report)
+Digunakan untuk mengevaluasi performa setiap kelas secara spesifik, terutama dalam konteks multi-class classification.
+
+2. Precision
+
+Menunjukkan seberapa banyak prediksi positif yang benar-benar positif. Formula: 
+$$\text{Precision} = \frac{\text{TP}}{\text{TP} + \text{FP}} \times 100\%$$
+
+3. Recall
+
+Mengukur seberapa banyak data positif yang berhasil diklasifikasi dengan benar. Formula:
+=TP / (TP + FN) * 100
+
+4. F1-Score
+Merupakan harmonic mean dari precision dan recall. Cocok digunakan ketika kita ingin keseimbangan antara keduanya. Formula:
+=2 * Precision * Recall / (Precision + Recall)
+
 Dari ketiga model yang digunakan, Random Forest menunjukkan kinerja terbaik dalam hal akurasi dan kestabilan prediksi, menjadikannya model utama yang direkomendasikan untuk digunakan dalam sistem klasifikasi tanaman berdasarkan data lingkungan. Namun, model seperti Decision Tree dan KNN juga dapat dipertimbangkan sebagai model cadangan atau untuk interpretasi hasil yang lebih mudah.
 
 Berikut hasil akurasi 3 buah model yang latih:
@@ -133,7 +157,6 @@ Berikut hasil akurasi 3 buah model yang latih:
 
 Gambar 3. Visualisasi Akurasi Model
 ![Visualisasi Akurasi Model](https://github.com/AnggaMarcelio/Predictive-Analytics/blob/dda55e8197940fa9b5930ff0b67372336d284752/image/Screenshot%202025-05-23%20221339.png)
-
 
 **Referensi**
 
