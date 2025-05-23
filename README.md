@@ -9,23 +9,36 @@ Perkembangan teknologi Machine Learning (ML) telah membuka peluang untuk mengata
 
 Penelitian selanjutnya menunjukkan bahwa penggunaan teknik Machine Learning dapat memberikan efisiensi tinggi dalam rekomendasi tanaman, serta berkontribusi pada peningkatan hasil pertanian dan pengurangan risiko kegagalan panen. [[3](https://doi.org/10.5281/zenodo.11441063)] Sebuah prototipe sistem berbasis mobile juga telah dikembangkan untuk digunakan langsung oleh petani di lapangan. Sistem tersebut memanfaatkan algoritma Random Forest dan menghasilkan akurasi rekomendasi hingga 95%, membuktikan efektivitasnya dalam aplikasi dunia nyata [[4](https://www.ijert.org/crop-recommendation-system-using-machine-learning)]
 
+Secara umum, pemanfaatan teknologi berbasis kecerdasan buatan seperti Machine Learning di sektor pertanian merupakan bagian dari transformasi menuju pertanian presisi (precision agriculture). Dengan kemampuan untuk menganalisis data dalam jumlah besar dan mengidentifikasi pola yang kompleks, Machine Learning memungkinkan sistem untuk memberikan rekomendasi berbasis prediksi yang sebelumnya sulit dicapai dengan pendekatan konvensional. Hal ini tidak hanya mendukung pengambilan keputusan yang lebih baik, tetapi juga berpotensi meningkatkan efisiensi sumber daya, mengurangi limbah pertanian, dan meningkatkan ketahanan terhadap perubahan iklim. Oleh karena itu, integrasi ML dalam sistem rekomendasi tanaman menjadi langkah strategis dalam mewujudkan pertanian yang berkelanjutan dan adaptif di masa depan.
+
 **Mengapa dan bagaimana masalah ini harus diselesaikan?**
 
-Masalah pemilihan tanaman yang tepat perlu diselesaikan karena ketidaktepatan dalam rekomendasi dapat berdampak signifikan pada produktivitas pertanian dan keberlanjutan usaha tani. Solusi berbasis machine learning memungkinkan otomatisasi dan akurasi dalam memberikan rekomendasi, sehingga memudahkan petani terutama yang belum memiliki keahlian agronomi mendalam.
+Masalah pemilihan tanaman yang tidak sesuai dengan kondisi tanah dan iklim lokal dapat berdampak signifikan terhadap produktivitas pertanian dan kesejahteraan petani. Banyak petani di daerah pedesaan masih mengandalkan pengalaman atau kebiasaan turun-temurun dalam menentukan jenis tanaman, tanpa mempertimbangkan data ilmiah terkait kualitas tanah, kebutuhan nutrisi, serta perubahan iklim yang kian tidak menentu. Akibatnya, tanaman yang ditanam sering kali tidak optimal, yang berujung pada hasil panen yang rendah, pemborosan sumber daya, dan kerugian finansial.
 
+Masalah ini harus diselesaikan dengan pendekatan berbasis teknologi dan data, salah satunya melalui pemanfaatan Machine Learning. Dengan memproses data seperti kandungan nitrogen, fosfor, kalium, pH tanah, curah hujan, suhu, dan kelembapan, algoritma Machine Learning dapat mempelajari pola dan menghasilkan rekomendasi tanaman yang paling sesuai dengan kondisi tersebut. Implementasi sistem semacam ini dapat membantu petani dalam mengambil keputusan yang lebih tepat, meningkatkan hasil produksi, serta memperkuat ketahanan pangan secara nasional. Selain itu, penggunaan sistem otomatis dan digital akan mempercepat adopsi teknologi di sektor pertanian menuju pertanian modern yang efisien dan berkelanjutan.
 
 ## Business Understanding
 ### Problem Statements
 
-1. Bagaimana memprediksi tanaman yang paling sesuai berdasarkan parameter tanah dan iklim?
-2. Model machine learning mana yang paling akurat untuk rekomendasi tanaman?
+Permasalahan utama yang melatarbelakangi proyek ini adalah:
+- Petani mengalami kesulitan dalam menentukan jenis tanaman yang paling sesuai dengan kondisi tanah dan lingkungan seperti pH, kadar nutrisi, suhu, dan curah hujan.
+- Keputusan yang tidak didasarkan pada data sering mengakibatkan tanaman tidak tumbuh optimal, hasil panen rendah, dan meningkatnya risiko kegagalan panen.
+- Ketiadaan sistem rekomendasi tanaman yang akurat dan mudah diakses oleh petani memperparah masalah pengambilan keputusan di lapangan.
 
 ### Goals
 
-1. Membangun model machine learning yang dapat merekomendasikan tanaman berdasarkan parameter lingkungan.
-2. Meningkatkan efisiensi pertanian dengan memberikan rekomendasi yang tepat.
+Adapun tujuan yang ingin dicapai dalam proyek ini adalah:
+- Mengembangkan sistem rekomendasi tanaman berbasis Machine Learning untuk membantu petani dalam memilih jenis tanaman terbaik sesuai kondisi agronomis.
+- Meningkatkan akurasi dan efektivitas dalam pemilihan tanaman agar hasil panen dapat optimal.
+- Menyediakan alat bantu pengambilan keputusan yang berbasis teknologi dan data untuk petani dan pemangku kepentingan terkait.
 
 ### Solution statements
+
+Solusi yang diajukan dalam proyek ini meliputi:
+- Pembuatan model klasifikasi Machine Learning (seperti Random Forest, Decision Tree dan K-Nearest Neighbors) yang dilatih menggunakan data parameter agrikultur penting.
+- Model yang dikembangkan mampu memberikan rekomendasi tanaman secara otomatis berdasarkan input kondisi tanah dan lingkungan.
+- Pengembangan sistem digital yang user-friendly dan dapat diakses langsung oleh petani maupun pihak terkait.
+- Sistem ini bertujuan meningkatkan produktivitas pertanian dan mengurangi risiko kerugian dengan pengambilan keputusan berbasis data.
 
 ## Data Understanding
 
