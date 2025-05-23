@@ -128,23 +128,33 @@ Dalam proyek klasifikasi ini, metrik evaluasi yang digunakan untuk mengukur kine
 1. Accuracy (Akurasi)
 
 Metrik ini mengukur proporsi prediksi yang benar terhadap keseluruhan jumlah prediksi. Formula:
-$$\text{Accuracy} = \frac{\text{TP + TN}}{\text{TN + TP + FN + FP}} \times 100\%$$
-Precision, Recall, dan F1-Score (melalui Classification Report)
-Digunakan untuk mengevaluasi performa setiap kelas secara spesifik, terutama dalam konteks multi-class classification.
 
-2. Precision
+$$\text{Accuracy} = \frac{\text{TP + TN}}{\text{TN + TP + FN + FP}} \times 100\%$$
+
+2. Precision, Recall, dan F1-Score (melalui Classification Report)
+Digunakan untuk mengevaluasi performa setiap kelas secara spesifik, terutama dalam konteks multi-class classification.
+- Precision
 
 Menunjukkan seberapa banyak prediksi positif yang benar-benar positif. Formula: 
+
 $$\text{Precision} = \frac{\text{TP}}{\text{TP} + \text{FP}} \times 100\%$$
 
-3. Recall
+- Recall
 
 Mengukur seberapa banyak data positif yang berhasil diklasifikasi dengan benar. Formula:
-=TP / (TP + FN) * 100
 
-4. F1-Score
+$$\text{Recall} = \frac{\text{TP}}{\text{TP} + \text{FN}} \times 100\%$$
+
+- F1-Score
 Merupakan harmonic mean dari precision dan recall. Cocok digunakan ketika kita ingin keseimbangan antara keduanya. Formula:
-=2 * Precision * Recall / (Precision + Recall)
+
+$$\text{F1-Score} = \frac{2 \cdot \text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}$$
+
+3. Cross-Validation Score
+Digunakan untuk mengukur kestabilan model pada berbagai subset data. Metode ini membagi dataset menjadi beberapa lipatan (fold), melatih model pada sebagian data dan mengujinya pada bagian lainnya secara bergiliran.
+Metode: cross_val_score(model, features, target, cv=5)
+
+### Hasil Proyek
 
 Dari ketiga model yang digunakan, Random Forest menunjukkan kinerja terbaik dalam hal akurasi dan kestabilan prediksi, menjadikannya model utama yang direkomendasikan untuk digunakan dalam sistem klasifikasi tanaman berdasarkan data lingkungan. Namun, model seperti Decision Tree dan KNN juga dapat dipertimbangkan sebagai model cadangan atau untuk interpretasi hasil yang lebih mudah.
 
