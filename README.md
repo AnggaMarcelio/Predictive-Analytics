@@ -5,7 +5,7 @@
 
 Sektor pertanian memainkan peran krusial dalam ketahanan pangan dan ekonomi nasional, terutama di negara berkembang seperti Indonesia. Salah satu tantangan utama adalah menentukan jenis tanaman yang paling sesuai untuk ditanam berdasarkan karakteristik tanah dan lingkungan, seperti tingkat pH, kadar nutrisi, curah hujan, dan suhu. Ketidaktepatan dalam pengambilan keputusan ini seringkali menyebabkan kerugian hasil panen dan penurunan pendapatan petani.
 
-Perkembangan teknologi Machine Learning (ML) telah membuka peluang untuk mengatasi tantangan tersebut dengan pendekatan berbasis data. Sebuah studi melaporkan bahwa sistem rekomendasi tanaman berbasis algoritma Random Forest berhasil mencapai akurasi hingga 99,22% dalam memprediksi jenis tanaman yang sesuai berdasarkan parameter agrikultur seperti nitrogen, fosfor, dan kelembapan [[1]https://doi.org/10.5935/jetia.v10i48.1186].
+Perkembangan teknologi Machine Learning (ML) telah membuka peluang untuk mengatasi tantangan tersebut dengan pendekatan berbasis data. Sebuah studi melaporkan bahwa sistem rekomendasi tanaman berbasis algoritma Random Forest berhasil mencapai akurasi hingga 99,22% dalam memprediksi jenis tanaman yang sesuai berdasarkan parameter agrikultur seperti nitrogen, fosfor, dan kelembapan  [[1](https://doi.org/10.5935/jetia.v10i48.1186)]
 
 Penelitian lain mengembangkan sistem pendukung keputusan berbasis aplikasi Android yang menggunakan 13 algoritma klasifikasi berbeda, termasuk SVM dan Decision Tree, untuk merekomendasikan tanaman yang cocok secara lokal. Sistem ini terbukti mampu membantu petani dalam pengambilan keputusan yang lebih akurat dan efisien [2].
 
