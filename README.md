@@ -133,22 +133,17 @@ $$\text{Accuracy} = \frac{\text{TP + TN}}{\text{TN + TP + FN + FP}} \times 100\%
 
 2. Precision, Recall, dan F1-Score (melalui Classification Report)
 Digunakan untuk mengevaluasi performa setiap kelas secara spesifik, terutama dalam konteks multi-class classification.
-- Precision
+- Precision: Menunjukkan seberapa banyak prediksi positif yang benar-benar positif. Formula: 
 
-Menunjukkan seberapa banyak prediksi positif yang benar-benar positif. Formula: 
+  $$\text{Precision} = \frac{\text{TP}}{\text{TP} + \text{FP}} \times 100\%$$
 
-$$\text{Precision} = \frac{\text{TP}}{\text{TP} + \text{FP}} \times 100\%$$
+- Recall: Mengukur seberapa banyak data positif yang berhasil diklasifikasi dengan benar. Formula:
 
-- Recall
+  $$\text{Recall} = \frac{\text{TP}}{\text{TP} + \text{FN}} \times 100\%$$
 
-Mengukur seberapa banyak data positif yang berhasil diklasifikasi dengan benar. Formula:
+- F1-Score: Merupakan harmonic mean dari precision dan recall. Cocok digunakan ketika kita ingin keseimbangan antara keduanya. Formula:
 
-$$\text{Recall} = \frac{\text{TP}}{\text{TP} + \text{FN}} \times 100\%$$
-
-- F1-Score
-Merupakan harmonic mean dari precision dan recall. Cocok digunakan ketika kita ingin keseimbangan antara keduanya. Formula:
-
-$$\text{F1-Score} = \frac{2 \cdot \text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}$$
+  $$\text{F1-Score} = \frac{2 \cdot \text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}$$
 
 3. Cross-Validation Score
 Digunakan untuk mengukur kestabilan model pada berbagai subset data. Metode ini membagi dataset menjadi beberapa lipatan (fold), melatih model pada sebagian data dan mengujinya pada bagian lainnya secara bergiliran.
