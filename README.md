@@ -68,7 +68,7 @@ Dataset terdiri dari 2.200 baris data dan 8 fitur input (independen) serta 1 tar
 
 **Exploratory Data Analysis (EDA)**:
 
-![Univariate Analysis]([https://i.ibb.co/V2mQ2dK/EDA-Univariate.png](https://github.com/AnggaMarcelio/Predictive-Analytics/blob/main/image/Distribusi%20Variabel.png?raw=true))
+![Univariate Analysis](https://github.com/AnggaMarcelio/Predictive-Analytics/blob/9493497de545fe0aba8984002572bfbfc8b0d0d3/image/Distribusi%20Variabel.png))
 
 
 ## Data Preparation
