@@ -122,13 +122,17 @@ KNN adalah algoritma non-parametrik yang mengklasifikasikan sampel berdasarkan m
 
 ## Evaluation
 
+Dari ketiga model yang digunakan, Random Forest menunjukkan kinerja terbaik dalam hal akurasi dan kestabilan prediksi, menjadikannya model utama yang direkomendasikan untuk digunakan dalam sistem klasifikasi tanaman berdasarkan data lingkungan. Namun, model seperti Decision Tree dan KNN juga dapat dipertimbangkan sebagai model cadangan atau untuk interpretasi hasil yang lebih mudah.
+
+Berikut hasil akurasi 3 buah model yang latih:
 | Model | Accuracy |
 | ------ | ------ |
-| KNN | 0.90 |
-| RandomForest  | 0.89 |
-| SVM | 0.89 |
-| Naive Bayes | 0.49 |
-| Extra Trees Classifier | 0.90 |
+| Random Forest | 0.99 |
+| Decision Tree  | 0.90 |
+| KNN | 0.975 |
+
+Gambar 3. Visualisasi Akurasi Model
+
 
 **Referensi**
 
