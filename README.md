@@ -43,6 +43,17 @@ Solusi yang diajukan dalam proyek ini meliputi:
 ## Data Understanding
 
 ### Variabel-variabel pada dataset adalah sebagai berikut:
+Dataset yang digunakan dalam proyek ini adalah Crop Recommendation Dataset yang tersedia secara publik di Kaggle (tautan dataset). Dataset ini berisi informasi agronomis yang digunakan untuk merekomendasikan jenis tanaman yang paling sesuai berdasarkan kondisi lingkungan dan tanah.
+
+- Struktur Dataset
+Dataset terdiri dari 2.200 baris data dan 8 fitur input (independen) serta 1 target label (dependen). Berikut penjelasan setiap kolom:
+| A_id | N  | P  | K  | Temperature | Humidity  | pH       | Rainfall   | Label |
+|------|----|----|----|-------------|-----------|----------|------------|--------|
+| 0    | 90 | 42 | 43 | 20.879744   | 82.002744 | 6.502985 | 202.935536 | rice   |
+| 1    | 85 | 58 | 41 | 21.770462   | 80.319644 | 7.038096 | 226.655537 | rice   |
+| 2    | 60 | 55 | 44 | 23.004459   | 82.320763 | 7.840207 | 263.964248 | rice   |
+| 3    | 74 | 35 | 40 | 26.491096   | 80.158363 | 6.980401 | 242.864034 | rice   |
+| 4    | 78 | 42 | 42 | 20.130175   | 81.604873 | 7.628473 | 262.717340 | rice   |
 
 **Exploratory Data Analysis (EDA)**:
 
