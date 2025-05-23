@@ -57,14 +57,14 @@ Dataset terdiri dari 2.200 baris data dan 8 fitur input (independen) serta 1 tar
 
 ### Variabel-variabel pada dataset adalah sebagai berikut:
 
-- 'N' : Kandungan nitrogen dalam tanah (ppm). Nutrisi penting yang memengaruhi pertumbuhan daun dan batang tanaman.
-- 'P' : Kandungan fosfor dalam tanah (ppm). Berperan dalam perkembangan akar dan pembungaan tanaman.
-- 'K' : Kandungan kalium dalam tanah (ppm). Mendukung kekebalan tanaman dan pembentukan buah.
-- 'Temperature' : Suhu rata-rata lingkungan (°C). Faktor lingkungan penting yang memengaruhi metabolisme tanaman.
-- 'Humidity' : Kelembapan udara (%). Mempengaruhi transpirasi dan penyerapan air oleh tanaman.
-- 'pH' : Tingkat keasaman tanah. Menentukan ketersediaan nutrisi dalam tanah bagi tanaman.
-- 'Rainfall' : Curah hujan tahunan (mm). Mempengaruhi kebutuhan air dan sistem irigasi tanaman.
-- 'Label' : Jenis tanaman yang direkomendasikan berdasarkan parameter agronomis di atas (misal: rice, maize, cotton, coffee, dll.).
+- `N` : Kandungan nitrogen dalam tanah (ppm). Nutrisi penting yang memengaruhi pertumbuhan daun dan batang tanaman.
+- `P` : Kandungan fosfor dalam tanah (ppm). Berperan dalam perkembangan akar dan pembungaan tanaman.
+- `K` : Kandungan kalium dalam tanah (ppm). Mendukung kekebalan tanaman dan pembentukan buah.
+- `Temperature` : Suhu rata-rata lingkungan (°C). Faktor lingkungan penting yang memengaruhi metabolisme tanaman.
+- `Humidity` : Kelembapan udara (%). Mempengaruhi transpirasi dan penyerapan air oleh tanaman.
+- `pH` : Tingkat keasaman tanah. Menentukan ketersediaan nutrisi dalam tanah bagi tanaman.
+- `Rainfall` : Curah hujan tahunan (mm). Mempengaruhi kebutuhan air dan sistem irigasi tanaman.
+- `Label` : Jenis tanaman yang direkomendasikan berdasarkan parameter agronomis di atas (misal: rice, maize, cotton, coffee, dll.).
 
 **Exploratory Data Analysis (EDA)**:
 
