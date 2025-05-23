@@ -42,10 +42,9 @@ Solusi yang diajukan dalam proyek ini meliputi:
 
 ## Data Understanding
 
-### Variabel-variabel pada dataset adalah sebagai berikut:
 Dataset yang digunakan dalam proyek ini adalah Crop Recommendation Dataset yang tersedia secara publik di Kaggle (tautan dataset). Dataset ini berisi informasi agronomis yang digunakan untuk merekomendasikan jenis tanaman yang paling sesuai berdasarkan kondisi lingkungan dan tanah.
 
-- Struktur Dataset
+### Struktur Dataset
 Dataset terdiri dari 2.200 baris data dan 8 fitur input (independen) serta 1 target label (dependen). Berikut penjelasan setiap kolom:
 
 | A_id | N  | P  | K  | Temperature | Humidity  | pH       | Rainfall   | Label |
@@ -55,6 +54,17 @@ Dataset terdiri dari 2.200 baris data dan 8 fitur input (independen) serta 1 tar
 | 2    | 60 | 55 | 44 | 23.004459   | 82.320763 | 7.840207 | 263.964248 | rice   |
 | 3    | 74 | 35 | 40 | 26.491096   | 80.158363 | 6.980401 | 242.864034 | rice   |
 | 4    | 78 | 42 | 42 | 20.130175   | 81.604873 | 7.628473 | 262.717340 | rice   |
+
+### Variabel-variabel pada dataset adalah sebagai berikut:
+
+- 'N' : Kandungan nitrogen dalam tanah (ppm). Nutrisi penting yang memengaruhi pertumbuhan daun dan batang tanaman.
+- 'P' : Kandungan fosfor dalam tanah (ppm). Berperan dalam perkembangan akar dan pembungaan tanaman.
+- 'K' : Kandungan kalium dalam tanah (ppm). Mendukung kekebalan tanaman dan pembentukan buah.
+- 'Temperature' : Suhu rata-rata lingkungan (°C). Faktor lingkungan penting yang memengaruhi metabolisme tanaman.
+- 'Humidity' : Kelembapan udara (%). Mempengaruhi transpirasi dan penyerapan air oleh tanaman.
+- 'pH' : Tingkat keasaman tanah. Menentukan ketersediaan nutrisi dalam tanah bagi tanaman.
+- 'Rainfall' : Curah hujan tahunan (mm). Mempengaruhi kebutuhan air dan sistem irigasi tanaman.
+- 'Label' : Jenis tanaman yang direkomendasikan berdasarkan parameter agronomis di atas (misal: rice, maize, cotton, coffee, dll.).
 
 **Exploratory Data Analysis (EDA)**:
 
