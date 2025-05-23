@@ -125,11 +125,9 @@ KNN adalah algoritma non-parametrik yang mengklasifikasikan sampel berdasarkan m
 ### Metrik Evaluasi yang Digunakan
 
 Dalam proyek klasifikasi ini, metrik evaluasi yang digunakan untuk mengukur kinerja model adalah:
-1. Accuracy (Akurasi)
+1. Accuracy (Akurasi): Metrik ini mengukur proporsi prediksi yang benar terhadap keseluruhan jumlah prediksi. Formula:
 
-Metrik ini mengukur proporsi prediksi yang benar terhadap keseluruhan jumlah prediksi. Formula:
-
-$$\text{Accuracy} = \frac{\text{TP + TN}}{\text{TN + TP + FN + FP}} \times 100\%$$
+  $$\text{Accuracy} = \frac{\text{TP + TN}}{\text{TN + TP + FN + FP}} \times 100\%$$
 
 2. Precision, Recall, dan F1-Score (melalui Classification Report)
 Digunakan untuk mengevaluasi performa setiap kelas secara spesifik, terutama dalam konteks multi-class classification.
