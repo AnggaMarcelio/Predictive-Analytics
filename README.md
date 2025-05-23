@@ -47,6 +47,7 @@ Dataset yang digunakan dalam proyek ini adalah Crop Recommendation Dataset yang 
 
 - Struktur Dataset
 Dataset terdiri dari 2.200 baris data dan 8 fitur input (independen) serta 1 target label (dependen). Berikut penjelasan setiap kolom:
+
 | A_id | N  | P  | K  | Temperature | Humidity  | pH       | Rainfall   | Label |
 |------|----|----|----|-------------|-----------|----------|------------|--------|
 | 0    | 90 | 42 | 43 | 20.879744   | 82.002744 | 6.502985 | 202.935536 | rice   |
