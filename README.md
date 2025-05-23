@@ -68,7 +68,11 @@ Dataset terdiri dari 2.200 baris data dan 8 fitur input (independen) serta 1 tar
 
 **Exploratory Data Analysis (EDA)**:
 
-![Univariate Analysis](https://github.com/AnggaMarcelio/Predictive-Analytics/blob/9493497de545fe0aba8984002572bfbfc8b0d0d3/image/Distribusi%20Variabel.png))
+Gambar 1. Visualisasi Distribusi Data
+![Visualisasi Distribusi Data](https://github.com/AnggaMarcelio/Predictive-Analytics/blob/9493497de545fe0aba8984002572bfbfc8b0d0d3/image/Distribusi%20Variabel.png))
+
+Gambar 2. Visualisasi Korelasi Fitur
+![Visualisasi Korelasi Fitur](https://github.com/AnggaMarcelio/Predictive-Analytics/blob/939a4c2b1a7bedd92af4e428781f4b0764b3dbc5/image/Korelasi%20Fitur.png))
 
 
 ## Data Preparation
