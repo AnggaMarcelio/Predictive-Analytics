@@ -69,21 +69,66 @@ Dataset terdiri dari 2.200 baris data dan 8 fitur input (independen) serta 1 tar
 **Exploratory Data Analysis (EDA)**:
 
 Gambar 1. Visualisasi Distribusi Data
-![Visualisasi Distribusi Data](https://github.com/AnggaMarcelio/Predictive-Analytics/blob/9493497de545fe0aba8984002572bfbfc8b0d0d3/image/Distribusi%20Variabel.png))
+![Visualisasi Distribusi Data](https://github.com/AnggaMarcelio/Predictive-Analytics/blob/9493497de545fe0aba8984002572bfbfc8b0d0d3/image/Distribusi%20Variabel.png)
 
 Gambar 2. Visualisasi Korelasi Fitur
-![Visualisasi Korelasi Fitur](https://github.com/AnggaMarcelio/Predictive-Analytics/blob/939a4c2b1a7bedd92af4e428781f4b0764b3dbc5/image/Korelasi%20Fitur.png))
+![Visualisasi Korelasi Fitur](https://github.com/AnggaMarcelio/Predictive-Analytics/blob/939a4c2b1a7bedd92af4e428781f4b0764b3dbc5/image/Korelasi%20Fitur.png)
 
 
 ## Data Preparation
 **Teknik Data Preparation**
 
+Beberapa langkah persiapan data dilakukan untuk memastikan data bersih dan siap digunakan dalam proses pelatihan model:
+- Pemeriksaan Missing Values: Dataset dicek terhadap keberadaan nilai yang hilang. Hasilnya menunjukkan tidak ada missing values, sehingga tidak diperlukan proses imputasi.
+- Pemeriksaan Duplikasi: Dataset diperiksa untuk baris yang duplikat. Hal ini penting agar model tidak dilatih secara berlebihan pada data yang sama.
+- Pemilahan Fitur dan Target: Data dipisahkan menjadi dua bagian utama, yaitu fitur (N, P, K, temperature, humidity, pH, rainfall) dan target (label jenis tanaman).
+- Pembagian Data Latih dan Uji: Dataset dibagi menjadi data pelatihan (80%) dan data pengujian (20%) agar model dapat diuji terhadap data yang belum pernah dilihat sebelumnya.
+
 **Alasan Tahapan Data Preparation Dilakukan**
 
+- Meningkatkan kualitas data: Pengecekan missing values dan duplikasi mencegah potensi bias atau error dalam pelatihan model.
+- Struktur data yang rapi: Pemisahan fitur dan target memastikan bahwa hanya informasi relevan yang digunakan dalam proses pelatihan.
+- Evaluasi model yang objektif: Pembagian data memungkinkan evaluasi performa model pada data yang belum dikenali sebelumnya, memberikan gambaran yang lebih akurat terhadap kemampuan generalisasi model.
+  
 ## Modeling
+
+Pada tahap ini, dilakukan proses pelatihan beberapa algoritma Machine Learning menggunakan data yang telah dibersihkan dan dibagi. Tujuannya adalah untuk membandingkan kinerja model dalam mengklasifikasikan jenis tanaman berdasarkan parameter tanah dan cuaca. Model yang digunakan meliputi:
+
+1. Random Forest Classifier
+
+Random Forest adalah algoritma berbasis ensemble learning yang membangun banyak pohon keputusan dan menggabungkan hasil prediksinya. Metode ini sangat baik dalam mengatasi overfitting dan cocok digunakan untuk dataset dengan banyak fitur.
+- Parameter utama: n_estimators=20, random_state=0
+- Cross-validation score: Stabil dan tinggi
+- Kelebihan: Mampu menangani data kompleks, Tahan terhadap overfitting, Memberikan estimasi pentingnya fitur
+- Kekurangan: Interpretasi model kurang intuitif, Lebih memakan waktu dalam proses prediksi dibanding model sederhana.
+
+2. Decision Tree Classifier
+
+Decision Tree merupakan model yang bekerja dengan membagi data ke dalam cabang berdasarkan nilai fitur, menggunakan konsep informasi maksimum (entropy). Model ini sering digunakan karena mudah dipahami dan divisualisasikan.
+
+- Parameter penting:
+  1. criterion = "entropy": menggunakan pengukuran informasi maksimum.
+  2. max_depth = 5: membatasi kedalaman pohon untuk menghindari overfitting.
+  3. random_state = 2: agar hasil konsisten.
+- Kelebihan: Mudah diinterpretasi dan divisualisasikan, Cepat dalam proses pelatihan dan prediksi.
+- Kekurangan: Rentan terhadap overfitting jika tidak diatur parameter seperti kedalaman (depth), Cenderung sensitif terhadap perubahan kecil pada data.
+
+3. K-Nearest Neighbors (KNN)
+KNN adalah algoritma non-parametrik yang mengklasifikasikan sampel berdasarkan mayoritas label dari tetangga terdekatnya. Model ini tidak memiliki proses pelatihan eksplisit, melainkan menyimpan semua data latih dan menghitung jarak setiap kali prediksi diperlukan.
+- Parameter penting: Menggunakan nilai default (k=5).
+- Kelebihan: Mudah dipahami dan diimplementasikan, Efektif untuk dataset yang memiliki distribusi fitur yang baik.
+- Kekurangan: Sensitif terhadap skala fitur dan outlier, Kurang efisien pada dataset yang sangat besar karena memerlukan komputasi jarak untuk setiap prediksi.
+
 
 ## Evaluation
 
+| Model | Accuracy |
+| ------ | ------ |
+| KNN | 0.90 |
+| RandomForest  | 0.89 |
+| SVM | 0.89 |
+| Naive Bayes | 0.49 |
+| Extra Trees Classifier | 0.90 |
 
 **Referensi**
 
