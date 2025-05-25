@@ -72,7 +72,7 @@ Gambar 1. Visualisasi Distribusi Data
 ![Visualisasi Distribusi Data](./image/Distribusi%20Variabel.png)
 
 Gambar 2. Visualisasi Korelasi Fitur
-![Visualisasi Korelasi Fitur](https://github.com/AnggaMarcelio/Predictive-Analytics/blob/939a4c2b1a7bedd92af4e428781f4b0764b3dbc5/image/Korelasi%20Fitur.png)
+![Visualisasi Korelasi Fitur](./image/Korelasi%20Fitur.png)
 
 
 ## Data Preparation
@@ -159,7 +159,7 @@ Berikut hasil akurasi 3 buah model yang latih:
 | KNN | 0.975 |
 
 Gambar 3. Visualisasi Akurasi Model
-![Visualisasi Akurasi Model](https://github.com/AnggaMarcelio/Predictive-Analytics/blob/dda55e8197940fa9b5930ff0b67372336d284752/image/Screenshot%202025-05-23%20221339.png)
+![Visualisasi Akurasi Model](./image/Screenshot%202025-05-23%20221339.png)
 
 **Referensi**
 
